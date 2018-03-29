@@ -1,0 +1,50 @@
+git add .gitignore
+git commit -m "otro commit"
+git add .
+git status
+git commit -m "otro commit mas"
+git status
+git push -u origin master
+git status
+doskey /history
+doskey /history > historicoentrada.txt
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/fjcarnicer/prueba.git
+git push -u origin master
+git commit -m "first commit"
+echo "# prueba" >> README.md
+git add README.md
+git commit -m "mi primer commit"
+git remote add origin https://github.com/fjcarnicer/prueba.git
+git push -u origin master
+npm run build
+dir
+git push ionic master
+git push ionic -u origin master
+git push -u origin master
+git remote add origin https://github.com/fjcarnicer/prueba.git
+git remote add master https://github.com/fjcarnicer/prueba.git
+git push -u master
+ionic start --pro -id cb25f1b1
+cd ..
+dir
+ionic start --pro -id cb25f1b1
+npm -install ssh
+npm install ssh
+ionic link cb25f1b1
+cd project1
+ionic link cb25f1b1
+ionic link
+echo "# repo2" >> README.md
+git init
+git add README.md
+git commit -m "first commit in the morning"
+git remote add origin https://github.com/fjcarnicer/repo2.git
+git push -u origin master
+git push
+dir
+git remote add origin https://github.com/fjcarnicer/repo2.git
+git push -u origin master
+git status
