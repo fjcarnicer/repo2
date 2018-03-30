@@ -3,36 +3,25 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Elementos</ion-title>
+    <ion-title>Cercenadores</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Lord Items</h3>
+  <h3>Cercenadores</h3>
 
-  <p>
-   Vamonos para google <a href="http://www.google.com">google</a> y que sea lo que Dios quiera
-  </p>
+
   <ion-list>
-
-      <ion-item>
-        <ion-label>Pepperoni</ion-label>
-        <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label>Sausage</ion-label>
-        <ion-checkbox [(ngModel)]="sausage" disabled="true"></ion-checkbox>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label>Mushrooms</ion-label>
-        <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
-      </ion-item>
-    
-    </ion-list>
-  
+    <ion-item *ngFor="let user of users">
+      <ion-avatar item-start>
+        <img [src]="user.picture.medium">
+      </ion-avatar>
+      <h2>{{ user.name.first | uppercase }}</h2>
+      <p>{{ user.email }}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
 <ion-footer>
     <ion-toolbar>
       <ion-title>
