@@ -13,6 +13,30 @@
   <p>
    Vamonos para google <a href="http://www.google.com">google</a> y que sea lo que Dios quiera
   </p>
+  <ion-list>
 
+      <ion-item>
+        <ion-label>Pepperoni</ion-label>
+        <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Sausage</ion-label>
+        <ion-checkbox [(ngModel)]="sausage" disabled="true"></ion-checkbox>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Mushrooms</ion-label>
+        <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
+      </ion-item>
+    
+    </ion-list>
   
 </ion-content>
+<ion-footer>
+    <ion-toolbar>
+      <ion-title>
+        <button ion-button block outline (click)="itemPress($event, button)">Footer</button>
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
